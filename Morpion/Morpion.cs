@@ -62,10 +62,8 @@ namespace Morpion
                 {
                     if (pr != null && pr == field[x, y]) r++; // check if row win
                     if (pc != null && pc == field[y, x]) c++; // check if col win
-                    if (x + y == dim - 1)
-                    {
-                        if (pa != null && pa == field[x, y]) a++; // check if antidiag win
-                    }
+                    if (x + y == dim - 1 && pa != null && pa == field[x, y]) a++; // check if antidiag win
+  
                     if (field[x, y] != null) t++;
                 }
                 if (c >= dim || r >= dim || d >= dim || a >= dim)
