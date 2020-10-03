@@ -72,13 +72,17 @@ namespace Morpion
                 {
                     winner = nextPlayer;
                     winner.victory++;
-                    Console.WriteLine((winner != null) ? $"Player {winner} won ! (victories : {winner.victory})" : "Draw game !");
+                    Console.WriteLine($"Player {winner} won ! (victories : {winner.victory})");
                     return true;
                 }
                 c = 0; r = 0;
             }
 
-            return (t >= (dim * dim));
+            if (t >= (dim * dim)) {
+                Console.WriteLine("Draw game !");
+                return true;
+            }
+            return false;
         }
 
         internal Tuple<int, int> NextMove()
