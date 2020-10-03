@@ -12,7 +12,7 @@ namespace Morpion
             Player p1 = new Player('X');
             Player p2 = new Player('O');
 
-            Morpion m = new Morpion(p1, p2, 3); // check the dim of the board it'll work with any dimension between (min 3) !
+            Morpion m = new Morpion(p1, p2, 3); // check the dim of the board it'll work with any dimension (min 3) !
 
             Render r = new Render(m);
 
