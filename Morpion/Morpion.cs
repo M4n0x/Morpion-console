@@ -112,7 +112,7 @@ namespace Morpion
             } while (true);
         }
 
-        internal bool doRestart()
+        internal bool DoRestart()
         {
             string val;
             do

@@ -16,7 +16,7 @@ namespace Morpion
 
             Render r = new Render(m);
 
-            while (!m.IsFinished() || m.doRestart())
+            while (!m.IsFinished() || m.DoRestart())
             {
                 var (x, y) = m.NextMove();
                 if (m.InsertMove(x, y))
